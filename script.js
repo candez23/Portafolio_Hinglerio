@@ -1,5 +1,12 @@
 // Validación del formulario de contacto
 const formulario = document.getElementById("form-contacto");
+// Botón para abrir/cerrar el menú
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("menu-open");
+});
 
 formulario.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita el envío del formulario por defecto
@@ -21,3 +28,4 @@ formulario.addEventListener("submit", function (event) {
     alert(`Gracias por tu mensaje, ${nombre}. ¡Me pondré en contacto contigo pronto!`);
     formulario.reset(); // Limpia los campos del formulario
 });
+
