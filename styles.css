@@ -313,3 +313,21 @@ nav ul li a:hover {
         display: flex;
     }
 }
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-arriba:hover {
+    background-color: #0056b3;
+}
+
